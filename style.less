@@ -1,0 +1,95 @@
+@import 'lib/stylesheets/reset.css';
+@import 'lib/stylesheets/less/grid.less';
+
+
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+@total-width: 100%;
+
+
+////////////
+// LAYOUT //
+////////////
+
+// header
+header#top {
+  margin-bottom: 1em;
+}
+
+// main column & sidebar
+#maincolumn {
+  .column(9);
+}
+#sidebar{
+  .column(3);
+}
+@media screen and (max-width: 720px) {
+  #maincolumn,
+  #sidebar {
+    .column(12);
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+////////////
+// STYLE //
+////////////
+@theme-color-red: #E45F56;
+@theme-color-lightgreen: #A3D39C;
+@theme-color-skygreen: #7ACCC8;
+@theme-color-bluegreen: #4AAAA5;
+@theme-color-blue: #35404F;
+body {
+  font-family:'Courier New', monospace;
+}
+nav > a {
+  color: @theme-color-red;
+  display: block;
+  margin: 4px auto;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.main {
+  height: 80%;
+}
+footer {
+  width: 100%;
+  border-top: .5em solid @theme-color-blue;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10%;
+  background-color: @theme-color-red;
+}
+.center {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  width: 60%;
+  text-align: center;
+  color: @theme-color-blue;
+}
+.center h1 {
+  font-weight: lighter;
+  width: 314px;
+  margin: 0 auto; 
+  border-top: 1px solid burlywood;
+  border-bottom: 1px solid burlywood;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 720px) {
+  .center {
+    width: 80%;
+    left: 10%;
+  }
+}
