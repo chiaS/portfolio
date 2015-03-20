@@ -7,7 +7,7 @@ angular.module('app', [
   'app.projects'
   ])
 .config(function($stateProvider, $urlRouterProvider){
-  $urlRouterProvider.otherwise("/app.home");
+  $urlRouterProvider.otherwise("/home");
   $stateProvider
     .state('app', {
       abstract: true,

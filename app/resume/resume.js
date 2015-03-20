@@ -10,5 +10,5 @@ angular.module('app.resume', [
     });
 })
 .controller('ResumeController', function(){
-
+  angular.element('.hide').fadeIn("slow");
 });

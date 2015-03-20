@@ -9,5 +9,5 @@ angular.module('app.home', [
     });
 })
 .controller('HomeController', function(){
-
+  angular.element('.hide').fadeIn("slow");
 });
