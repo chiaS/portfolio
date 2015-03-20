@@ -4,26 +4,33 @@
   <meta charset="utf-8"/>
   <title>Chia Hsin Santos</title>
   <link rel="stylesheet" href="css/style.css" media="screen"/>
+  
 </head>
-<body ng-app="chiahsin">
+<body ng-app="app">
   <div class="wrapper">
     <nav id="sidebar">
-      <a href="#">home</a>
-      <a href="#">resume</a>
-      <a href="#">projects</a>
-      <a href="#">contact</a>
+      <a ui-sref="app.home">HOME</a>
+      <a ui-sref="app.resume">RESUME</a>
+      <a ui-sref="app.projects">PROJECTS</a>
+      <a ui-sref="app.contact">CONTACT</a>
     </nav>
-    <main id="maincolumn">
-      <div class="center">
+    <main ui-view id="maincolumn">
+    <!--   <div class="center">
         <h1 class="name">CHIA HSIN SANTOS</h1>
         <h4>Web developer</h4>
         <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque cursus lectus quis scelerisque. Phasellus sit amet neque nec orci maximus ullamcorper iaculis sollicitudin eros. Etiam sollicitudin tempus lorem nec consequat. Praesent sagittis congue nisi eget sollicitudin. Suspendisse fermentum enim ut luctus suscipit. Curabitur lacus metus, commodo vestibulum euismod et, vehicula aliquet nisl. Etiam porta enim ullamcorper diam dictum, ut consectetur nisi suscipit. Etiam nec tellus venenatis lacus iaculis convallis.</p>
-        <!-- sticky footer -->
-        <div class="pushh"></div>
-      </div>
+        <div class="pushh">1+2={{AppCtrl.greeting}}</div>
+      </div> -->
     </main>
   </div>
   <footer></footer>
-  <script async src="/node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/home/home.js"></script>
+  <script src="app/resume/resume.js"></script>
+  <script src="app/projects/projects.js"></script>
+  <script src="app/contact/contact.js"></script>
+
 </body>
 </html>
