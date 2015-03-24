@@ -27,19 +27,12 @@ header, .top {
 
 // main column & sidebar
 #maincolumn {
-  .column(9);
+  .column(10);
 }
 #sidebar{
-  .column(3);
+  .column(2);
 }
-@media screen and (max-width: 720px) {
-  #maincolumn,
-  #sidebar {
-    .column(12);
-    margin-bottom: 1em;
-    text-align: center;
-  }
-}
+
 
 ////////////
 // STYLE //
@@ -52,26 +45,42 @@ header, .top {
 .hide {
   display: none;
 }
+//logo of my name
 .name() {
   font-weight: lighter;
+  font-family:'Courier New', monospace;
   margin: 0 auto; 
   border-top: 1px solid burlywood;
   border-bottom: 1px solid burlywood;
   padding: 10px 0;
 }
+.subtitle {
+  font-size: 3em;
+  position: relative;
+  top: 1em;
+  color: @theme-color-blue;
+}
 body, html {
   height: 100%;
   margin:0;
-  font-family:'Courier New', monospace;
+  font-family: 'Open Sans' sans-serif;
+  font-weight: lighter;
   background-color: #f6f6f6;
 }
 .wrapper {
+  box-sizing: border-box;
+  padding-top: 2em;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -7em;
 }
-footer, .pushh {
+header > h1.title {
+  .name();
+  float: left;
+  text-align: center;
+}
+footer {
   clear: both;
   height: 5em;
 }
@@ -94,4 +103,20 @@ footer {
   width: 100%;
   border-top: .5em solid @theme-color-blue;
   background-color: @theme-color-red;
+}
+footer img {
+  width: 35px;
+}
+
+@media screen and (max-width: 720px) {
+  #maincolumn,
+  #sidebar {
+    .column(12);
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  header > h1.title {
+    float: none;
+    width: 56%;
+  }
 }

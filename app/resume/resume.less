@@ -1,15 +1,39 @@
-section .title {
-  .name();
-  width: 250px;
-  text-align: center;
+.resume h3 {
+  padding-top: 1em;
+  border-top: 1px solid rgba(228, 95, 86, 0.39);
+  color: burlywood;
+  font-weight: lighter;
+}
+
+.resume h4, dt{
+  font-weight: 400;
+  color: gray;
 }
 
 section .experience {
   .column(7);
-  border:1px solid red;
+}
+section .experience li {
+  margin-bottom: .4em;
+  line-height: 1.2;
 }
 section .skills {
-  .column(2);
-    border:1px solid red;
+  .column(3);
+}
 
+dl {
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 720px) {
+  section .experience {
+    margin-left: 10%;
+  }
+  section .experience li {
+    text-align: left;
+  }
+  .resume h4,
+  dl {
+    text-align: left;
+  }
 }

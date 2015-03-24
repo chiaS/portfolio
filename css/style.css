@@ -13,12 +13,13 @@ body:after {
 }
 .center {
   margin-top: 20%;
-  width: 60%;
+  width: 80%;
   text-align: center;
   color: #35404f;
 }
 .center h1 {
   font-weight: lighter;
+  font-family: 'Courier New', monospace;
   margin: 0 auto;
   border-top: 1px solid burlywood;
   border-bottom: 1px solid burlywood;
@@ -32,28 +33,47 @@ body:after {
     width: 80%;
   }
 }
-section .title {
+.resume h3 {
+  padding-top: 1em;
+  border-top: 1px solid rgba(228, 95, 86, 0.39);
+  color: burlywood;
   font-weight: lighter;
-  margin: 0 auto;
-  border-top: 1px solid burlywood;
-  border-bottom: 1px solid burlywood;
-  padding: 10px 0;
-  width: 250px;
-  text-align: center;
+}
+.resume h4,
+dt {
+  font-weight: 400;
+  color: gray;
 }
 section .experience {
   display: inline;
   float: left;
   width: 56.25%;
   margin: 0 1.04166667%;
-  border: 1px solid red;
+}
+section .experience li {
+  margin-bottom: .4em;
+  line-height: 1.2;
 }
 section .skills {
   display: inline;
   float: left;
-  width: 14.58333333%;
+  width: 22.91666667%;
   margin: 0 1.04166667%;
-  border: 1px solid red;
+}
+dl {
+  line-height: 1.2;
+}
+@media screen and (max-width: 720px) {
+  section .experience {
+    margin-left: 10%;
+  }
+  section .experience li {
+    text-align: left;
+  }
+  .resume h4,
+  dl {
+    text-align: left;
+  }
 }
 header,
 .top {
@@ -66,44 +86,51 @@ header,
 #maincolumn {
   display: inline;
   float: left;
-  width: 72.91666667%;
+  width: 81.25%;
   margin: 0 1.04166667%;
 }
 #sidebar {
   display: inline;
   float: left;
-  width: 22.91666667%;
+  width: 14.58333333%;
   margin: 0 1.04166667%;
-}
-@media screen and (max-width: 720px) {
-  #maincolumn,
-  #sidebar {
-    display: inline;
-    float: left;
-    width: 97.91666667%;
-    margin: 0 1.04166667%;
-    margin-bottom: 1em;
-    text-align: center;
-  }
 }
 .hide {
   display: none;
+}
+.subtitle {
+  font-size: 3em;
+  position: relative;
+  top: 1em;
+  color: #35404f;
 }
 body,
 html {
   height: 100%;
   margin: 0;
-  font-family: 'Courier New', monospace;
+  font-family: 'Open Sans' sans-serif;
+  font-weight: lighter;
   background-color: #f6f6f6;
 }
 .wrapper {
+  box-sizing: border-box;
+  padding-top: 2em;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -7em;
 }
-footer,
-.pushh {
+header > h1.title {
+  font-weight: lighter;
+  font-family: 'Courier New', monospace;
+  margin: 0 auto;
+  border-top: 1px solid burlywood;
+  border-bottom: 1px solid burlywood;
+  padding: 10px 0;
+  float: left;
+  text-align: center;
+}
+footer {
   clear: both;
   height: 5em;
 }
@@ -125,4 +152,22 @@ footer {
   width: 100%;
   border-top: 0.5em solid #35404f;
   background-color: #e45f56;
+}
+footer img {
+  width: 35px;
+}
+@media screen and (max-width: 720px) {
+  #maincolumn,
+  #sidebar {
+    display: inline;
+    float: left;
+    width: 97.91666667%;
+    margin: 0 1.04166667%;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  header > h1.title {
+    float: none;
+    width: 56%;
+  }
 }
