@@ -4,7 +4,9 @@
   "description": "Chia Hsin's portfolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "postinstall": "npm install",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
