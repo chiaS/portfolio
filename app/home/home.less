@@ -1,18 +1,24 @@
 .center {
-  margin-top: 20%;
+  margin-top: 18%;
   width: 80%;
-  text-align: center;
+  text-align: left;
   color: @theme-color-blue;
+  h2 {
+    color: @theme-color-blue;
+    font-size: 2em;
+  }
+  p {
+    text-align: justify;
+  }
 }
-.center h1{
-  .name();
-  width: 314px;
-}
+
 
 @media screen and (max-width: 720px) {
   .center {
-    margin-top: 0;
     margin-left: 10%;
     width: 80%;
+  }
+  .center h2 {
+    font-size: 1.8em;
   }
 }

@@ -12,24 +12,25 @@
       <a ui-sref="app.home">HOME</a>
       <a ui-sref="app.resume">RESUME</a>
       <a ui-sref="app.projects">PROJECTS</a>
-      <a ui-sref="app.contact">CONTACT</a>
+      <!-- <a ui-sref="app.contact">CONTACT</a> -->
     </nav>
     <!-- children pages go here -->
     <main id="maincolumn">
       <header>
         <h1 class="title">CHIA HSIN SANTOS</h1>
+        <div>
+          <a href="http://www.linkedin.com/in/chiahs" target="_blank">
+            <img src="img/Linkedin@3x.png" alt="linkedin"/>
+          </a>
+          <a href="https://github.com/chiaS" target="_blank">
+            <img src="img/GitHub-Mark-64px.png" alt="github"/>
+          </a>
+        </div>
       </header>
       <div ui-view ></div>
     </main>
   </div>
-  <footer>
-    <a href="http://www.linkedin.com/in/chiahs" target="_blank">
-      <img src="img/Linkedin@3x.png" alt="linkedin"/>
-    </a>
-    <a href="https://github.com/chiaS" target="_blank">
-      <img src="img/GitHub-Mark-64px.png" alt="github"/>
-    </a>
-  </footer>
+  
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <script src="node_modules/angular/angular.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>

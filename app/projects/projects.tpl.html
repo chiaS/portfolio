@@ -1,0 +1,56 @@
+<section class="project hide">
+	<!-- <h2 class="subtitle">Projects</h2> -->
+	<main id="p1">
+		<ul>
+			<li class="slide1">
+				<article>
+					<h4>Read Bible</h4>
+					<p>Read Bible is a solo project, made for Franciscans in Taiwan. They already have a desktop website made with CMS, but they hope to build a mobile app to bring convenience to their users. The challenge is I don’t have access to their server, how the data is structured on the back-end is unknown. As a result, I built a crawler server and RESTful API to capture content from their desktop website (<a href="http://www.ccreadbible.org/" target="_blank">http://www.ccreadbible.org/</a>), parse the poor formatted HTML, and then serve the data to mobile devices. The technologies used include Node.js, Express on the back-end, and Ionic, Stylus, Angular on the front-end. This is an ongoing project, there are still many new features to be discussed. However, it can now render weekly readings beautifully and play the latest homily audios recorded by priest. </p>	
+				</article>
+			</li>	
+			<li class="slide2">
+				<div class="img-wrapper">
+					<img height="100%" src="../img/RB.png" alt="landing screen"/>
+				</div>
+			</li>
+			<li class="slide3">
+				<div class="img-wrapper">
+					<img height="100%" src="../img/RB_homily.png" alt="landing screen"/>
+				</div>
+			</li>
+		</ul>
+		<nav>
+			<a ng-click="p1.moveLeft()"><span>&#8672</span></a>
+			<a ng-click="p1.moveRight()"><span>&#8674</span></a>
+		</nav>
+	</main>
+
+	<main id="p2">
+		<ul>
+			<li class="slide1">
+				<article>
+					<h4>Sip</h4>
+					<p>I've worked on a client project Sip with a team of four, aiming to create a real-time drink ordering application, which eliminates the need to wait in line to place your order. Simply place an order from your smartphone, and you will be notified when your drink order is ready to pick up. My focus in this project was front-end, including integrating Flux with Angular, transmitting data to/from server purely using web socket, color scheme and layout design. We drove the project to beta stage completion in just under a month. The technologies used include Node.js, PubNub, MongoDB, and Auth0 on the back-end, and Ionic, Stylus, Angular with Flux on the front-end. 
+					</p>		
+				</article>
+			</li>
+			<li class="slide2">
+				<div class="img-wrapper">
+					<img width="100%" src="../img/sip_landing.png" alt="landing screen"/>
+				</div>
+			</li>
+			<li class="slide3">
+				<div class="img-wrapper">
+					<img width="100%" src="../img/sip_menu.png" alt="sip menu"/>
+				</div>
+			</li>
+			<li class="slide4">
+				<iframe height="100%" width="100%" src="https://www.youtube.com/embed/sk8Q9Agjno4" frameborder="0" allowfullscreen></iframe>
+			</li>
+		</ul>
+		<nav>
+			<a ng-click="p2.moveLeft()"><span>&#8672</span></a>
+			<a ng-click="p2.moveRight()"><span>&#8674</span></a>
+		</nav>
+	</main>
+</section>
